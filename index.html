@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>手风琴菜单</title>
+    <style>
+    
+    </style>
+    <link rel="stylesheet" href="./icon_font/iconfont.css">
+    <link rel="stylesheet" href= "./index.css">
+</head>
+    
+<body>
+    <ul class="nav-con">
+        <li class="nav-item">
+            <p class="title"><i class="icon icon-icon_huabanfuben"></i>四大名著<i class="down icon-xiangxia"></i></p>
+            <ul class="sub-nav">
+                <li class="sub-item">
+                    <a href="javascript:">西游记</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">红楼梦</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">三国演义</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">水浒传</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <p class="title"><i class="icon icon-nv"></i>四大美女<i class="down icon-xiangxia"></i></p>
+            <ul class="sub-nav">
+                <li class="sub-item">
+                    <a href="javascript:">西施</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">王昭君</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">貂蝉</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">杨玉环</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <p class="title"><i class="icon icon-dengpao"></i>四大发明<i class="down icon-xiangxia"></i></p>
+            <ul class="sub-nav">
+                <li class="sub-item">
+                    <a href="javascript:">造纸术</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">指南针</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">火药</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">活字印刷术</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <p class="title"><i class="icon icon-yinhang"></i>四大银行<i class="down icon-xiangxia"></i></p>
+            <ul class="sub-nav">
+                <li class="sub-item">
+                    <a href="javascript:">中国银行</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">中国农业银行</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">中国建设银行</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">中国工商银行</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <p class="title"><i class="icon icon-chengshi"></i>四大直辖市<i class="down icon-xiangxia"></i></p>
+            <ul class="sub-nav">
+                <li class="sub-item">
+                    <a href="javascript:">北京</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">天津</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">上海</a>
+                </li>
+                <li class="sub-item">
+                    <a href="javascript:">重庆</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./accordion.js"></script>
+    <script>
+        new Accordion({
+            navTitle:$(".nav-con .nav-item .title"),
+            subNav:$(".nav-con .nav-item .sub-nav"),
+            activeClassName:"active",
+            multiple:false,//是否允许展开多个子菜单
+        })
+    
+    
+    </script>
+</body>
+</html>
